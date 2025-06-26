@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Signup Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #87CEEB; /* Sky Blue */
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 50px 15px;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #000; /* Black */
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Floating effect */
+      width: 100%;
+      max-width: 500px;
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 500;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      background-color: #1a1a1a;
+      color: white;
+      font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #aaa;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #00aaff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #008ecc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>User Signup Form</h2>
+  <form action="#" method="POST">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">-- Select Gender --</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+      <option>Prefer not to say</option>
+    </select>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="e.g. name@example.com" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="e.g. +254712345678" required>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3" placeholder="Your residential or postal address" required></textarea>
+
+    <label for="nationality">Nationality:</label>
+    <input type="text" id="nationality" name="nationality" required>
+
+    <label for="idnumber">National ID / Passport Number:</label>
+    <input type="text" id="idnumber" name="idnumber" required>
+
+    <label for="marital">Marital Status:</label>
+    <select id="marital" name="marital" required>
+      <option value="">-- Select --</option>
+      <option>Single</option>
+      <option>Married</option>
+      <option>Divorced</option>
+      <option>Widowed</option>
+    </select>
+
+    <label for="hobbies">Hobbies / Interests:</label>
+    <input type="text" id="hobbies" name="hobbies" placeholder="e.g. coding, reading, traveling">
+
+    <label for="education">Highest Academic Qualification:</label>
+    <input type="text" id="education" name="education" placeholder="e.g. BSc Computer Science" required>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+</body>
+</html>
